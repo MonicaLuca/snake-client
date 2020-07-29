@@ -31,6 +31,15 @@ const handleUserInput = function(key) {
     // console.log('right');
     connection.write('Move: right');
   }
+  if (key === 'h') {
+    connection.write('Say: hey');
+  }
+  if (key === 'j') {
+    connection.write('Say: how you doin?');
+  }
+  if (key === 'k') {
+    connection.write('Say: whatsssss up?');
+  }
 };
 
 module.exports = { setupInput };
